@@ -117,11 +117,14 @@
             <version>1.3.04</version>
         </dependency>
 
+        <!-- In-memory DB for tests to avoid requiring local MySQL during CI/dev tests -->
         <dependency>
-        	<groupId>com.crni99</groupId>
-        	<artifactId>bookstore</artifactId>
-        	<version>0.0.1-SNAPSHOT</version>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
         </dependency>
+
+       
     </dependencies>
 
     <build>

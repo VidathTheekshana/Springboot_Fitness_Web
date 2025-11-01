@@ -20,9 +20,7 @@ spring:
           sf:
             ehcache:
               configurationResourceName: ehcache.xml
-        dialect:
-          - org.hibernate.dialect.MySQL57Dialect
-          - storage_engine: innodb
+        dialect: org.hibernate.dialect.MySQL57Dialect
         cache:
           use_query_cache: true
           use_second_level_cache: true
